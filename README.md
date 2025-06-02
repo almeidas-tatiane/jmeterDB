@@ -16,7 +16,7 @@ This project configures a PostgreSQL database with a users table to be tested at
 ### 1. Requirements
 
 - Docker and Docker Compose installed
-- JMeter installed
+- JMeter v5.6.3 installed (download here https://jmeter.apache.org/download_jmeter.cgi)
 - PostgreSQL JDBC driver added to JMeter lib folder (download here https://jdbc.postgresql.org/download/ )
 
 ### 2. Starting Database at Docker
