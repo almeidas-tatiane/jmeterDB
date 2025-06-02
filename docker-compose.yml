@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres
+    container_name: jmeter_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: jmeter
+      POSTGRES_PASSWORD: jmeter123
+      POSTGRES_DB: testdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
